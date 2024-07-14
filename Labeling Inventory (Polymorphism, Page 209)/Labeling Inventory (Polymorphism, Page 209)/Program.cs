@@ -3,7 +3,7 @@
 
 namespace Labeling_Inventory__Polymorphism__Page_209_
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
