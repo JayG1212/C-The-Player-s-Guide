@@ -14,5 +14,10 @@ namespace Labeling_Inventory__Polymorphism__Page_209_
         {
 
         }
+
+        public override string ToString()
+        {
+            return "Sword";
+        }
     }
 }

@@ -19,14 +19,14 @@ namespace Labeling_Inventory__Polymorphism__Page_209_
 
         public double Weight
         {
-            get;
-            set;
+            get { return this.weight; }
+            set { this.weight = value; }
         }
 
         public double Volume
         {
-            get;
-            set;
+            get { return this.volume; }
+            set { this.volume = value; }
         }
 
 

@@ -21,17 +21,20 @@ namespace Labeling_Inventory__Polymorphism__Page_209_
         // Getters and Setters
         public int ItemLimit
         {
-            get;
+            get { return this.ItemLimit; }
+            private set { this.itemLimit = value; }
         }
 
         public double WeightLimit
         {
-            get;
+            get { return this.WeightLimit; }
+            private set { this.weightLimit = value; }
         }
 
         public double VolumeLimit
         {
-            get;
+            get { return this.VolumeLimit; }
+            private set { this.volumeLimit = value; }
         }
 
         // Constructors
@@ -78,6 +81,17 @@ namespace Labeling_Inventory__Polymorphism__Page_209_
             {
                 throw new InvalidOperationException("Cannot add Item: Exceeds Item limit");
             }
+        }
+       
+        public override string ToString()
+        {
+            string message = "";
+            message += "Contents in Pack: ";
+            foreach(var i in listOfItems)
+            {
+                message += i.ToString() + ", ";
+            }
+            return message;
         }
     }
 }
